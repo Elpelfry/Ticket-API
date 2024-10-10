@@ -19,6 +19,7 @@ builder.Services.AddScoped<IGenericService<Prioridades>, PrioridadesService>();
 builder.Services.AddScoped<IGenericService<Clientes>, ClientesService>();
 builder.Services.AddScoped<IGenericService<Tickets>, TicketsService>();
 builder.Services.AddScoped<IGenericService<Sistemas>, SistemasService>();
+builder.Services.AddScoped<IGenericService<Products>, ProductsService>();
 
 var app = builder.Build();
 

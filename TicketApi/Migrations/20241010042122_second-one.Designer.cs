@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TicketApi.DAL;
 
@@ -11,9 +12,11 @@ using TicketApi.DAL;
 namespace TicketApi.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20241010042122_second-one")]
+    partial class secondone
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -101,9 +104,6 @@ namespace TicketApi.Migrations
 
                     b.Property<string>("Title")
                         .HasColumnType("longtext");
-
-                    b.Property<int>("Units")
-                        .HasColumnType("int");
 
                     b.HasKey("ProductId");
 
