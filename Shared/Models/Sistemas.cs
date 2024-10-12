@@ -8,7 +8,7 @@ public class Sistemas
     public int SistemaId { get; set; }
 
     [Required(ErrorMessage = "Campo Obligatorio")]
-    public string? Sistema { get; set; }
+    public string? Nombre { get; set; }
 
     [Required(ErrorMessage = "Campo Obligatorio")]
     public string? Descripcion { get; set; }
