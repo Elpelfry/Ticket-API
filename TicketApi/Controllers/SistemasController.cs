@@ -60,6 +60,6 @@ public class SistemasController(IGenericService<Sistemas> _service) : Controller
             return NotFound();
         }
 
-        return NoContent();
+        return Ok();
     }
 }
